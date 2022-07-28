@@ -23,7 +23,7 @@ export default function CardContainer(props) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small"><a href={props.link} target="_blank">Full Article</a></Button>
+                <Button size="small"><a href={props.link} target="_blank" rel="noreferrer">Full Article</a></Button>
             </CardActions>
         </Card>
     );
