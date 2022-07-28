@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Form from "./components/Form";
+import Tabs from "./components/Tabs";
 
-function App() {
+
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='p-5 text-center'>
+        <h1 className='mb-3'>RSS News Aggregator</h1>
+        <h4 className='mb-3'>Aggregates news articles from major outlets.</h4>
+      </div>
+      <Tabs />
+      <Form />
     </div>
   );
 }
-
-export default App;
