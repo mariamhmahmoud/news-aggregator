@@ -31,7 +31,7 @@ export default function Form(props) {
                     date = date.innerHTML
                 }
                 let link = ""
-                rssUrl == "https://moxie.foxnews.com/google-publisher/latest.xml" ? link = items[i].querySelector("guid") : link = items[i].querySelector("link");
+                rssUrl === "https://moxie.foxnews.com/google-publisher/latest.xml" ? link = items[i].querySelector("guid") : link = items[i].querySelector("link");
                 if (link) {
                     link = link.innerHTML;
                 }
